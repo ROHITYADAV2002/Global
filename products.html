@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- NEED HELP SECTION -->
+    <div class="need">
+        <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
+        <div class="overlay"></div>
+        <div class="loginform">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
+                <h4>Request a Call</h4>
+                <span onclick="closeModle()">&times;</span>
+                <hr>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    <p id="userError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                    <p id="emailError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
+                    <p id="phoneError" class="error"></p>
+                    <hr>
+                </div>
+                <a href=""> <button type="submit" class="btn btn-primary">Sent Request</button> </a>
+            </form>
+        </div>
+        <div id="need">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:9320763716 /9120004004" id="no">9320763716 / 9120004004</a>
+        </div>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
+        <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Mail Us For Support</span>
+            <a href="mailto:gbs.mumbai@gmail.com" id="mail">gbs.mumbai@gmail.com</a>
+        </div>
+    </div>
+
+
+    <!-- Navbar Section -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: cursive;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/products.html">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated Services</a></li>
+                              <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
+                            
+                             
+                            </ul>
+                          </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="learnBusy.html">Learn Busy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
+                        <button onclick="show() " class="now">Enquire
+                            Now</button>
+                        <div class="over"></div>
+                        <div class="login">
+
+                            <h4>Contact</h4>
+                            <span onclick="closem()">&times;</span>
+                            <hr>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="company" id="Company" placeholder=" Company Name"
+                                    required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="address" placeholder="Address 1" id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Address 1</label>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="remarks" placeholder="Address 2" id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Remarks</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"
+                                    required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id" required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="city" id="city" placeholder="City" required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
+                                <p id="phoneError" class="error"></p>
+                                <hr>
+                            </div>
+                            <a href=""> <button type="submit" class="btn btn-primary">Sumbit</button> </a>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Busy Product  -->
+    <div class="busy">
+        <img src="image/8c4c45_0eb6eb12b08d4f91847b7971949aaa45~mv2 (1).gif" alt="" srcset="" class="animat">
+        <div id="busy">
+            <h1>BUSY</h1>
+            <p class="lorem">BUSY 21 - The Complete Business Accounting Software for Growing Businesses. To feed the
+                diverse
+                business needs of the Small and Medium Businesses, BUSY Accounting Software is offered in three
+                editions.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- busy info -->
+    <div class="info">
+        <div id="info">
+            <img src="image/4F5D22F35599919F9104422699_1660034961712.png" alt="" srcset="">
+            <h2> Basic</h2>
+            <p>
+                Basic comes with minimal set of features covering Invoicing, Accounting, Basic Inventory and Statutory
+                Reports. It is meant for shopkeepers and small businesses whose main requirement is invoicing, book
+                keeping and compliance.</p>
+            <a href=""> <button>Get in Touch</button></a>
+        </div>
+        <div id="info1">
+            <img src="image/4F5D22F35599919F9104422699_1660034961712.png" alt="" srcset="">
+            <h2>Standard</h2>
+            <p>
+                It has all the features of Basic edition plus a lot of other business management features like Order /
+                Quotation / Challan Management, Multiple Units of Items, Item Barcode / POS Billing, Direct SMS / Email
+                facility and much more. These features are purely business management features and are meant to enhance
+                business productivity.</p>
+            <a href=""> <button>Get in Touch</button></a>
+        </div>
+        <div id="info">
+            <img src="image/4F5D22F35599919F9104422699_1660034961712.png" alt="" srcset="">
+            <h2> Enterprise</h2>
+            <p>
+                It has all the features of Standard edition plus a lot other enterprise features like Multi-Branch /
+                Location Management, Enquiry / Support Management, Voucher Approval System, Payroll Management,
+                exhaustive checks and controls and much more required in a distributed environment for collaborative
+                working.</p>
+            <a href=""> <button>Get in Touch</button></a>
+        </div>
+    </div>
+
+    <!-- Choose Your Busy -->
+    <div class="choose">
+        <h1>Choose Your Busy</h1>
+        <div class="divScroll">
+            <table id="myTable">
+                <tr class="heading">
+                    <th id="heading">FEATURES</th>
+                    <th id="heading">BASIC</th>
+                    <th id="heading">STANDARD</th>
+                    <th id="heading">ENTERPRISE</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td id="tcs">TDS / TCS</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Online GSTIN Validation</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">GSTR-2A Reconciliation</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Automatic Eway Bill / E-Invoice Genearation</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">GST Returns in JSON Fomat for Direct Upload to Portal</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">GST Registers (Configurable)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">GST e-Returns (GSTR-1 / GSTR-3B / GSTR-4 / ITC-04)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">GST / VAT Summary</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Purchase Indent Management</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Quotations / Order / Challan Management</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Scheme based on Item / Group / Invoice Amount</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Define Period-based Schemes (Date & Time)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Physical Stock Voucher</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Job work Management with Auto Posting in Accounts</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Production / Unassemble</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">BOM / Production Planning</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Item-Qty-wise Price / Discount Slabs</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Enhanced Party / Date / Item-Qty-wise Price Structure(s)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+
+                        <td id="tcs">Item Batch / Serial No / Parametrized-wise Maintainance</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Primary, Alternate and Packaging Unit for each Item</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Provision for Free Qty in Inventory Vouchers</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Stock Valuation on Multiple Methods</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">All books of Inventory</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Broker-wise / Royalty Calculation</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Multi-Currency Accounting</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Configurable Balance Sheet & Profit / Loss A/c</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Handling of Post-dated Cheques (PDC)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Interest Calculation with Automatic Posting in Accounts</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">All Books of Accounts</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Payroll and CRM</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Provision for Invoice Printing in Second Language</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Images / Notes in Account / Item Masters</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">User-configurable Invoice / Vouchers / Documents</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Graphs & Charts</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Reports Export (Plain File / HTML / PDF / MS-Excel)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="tcs">Mutli-Company / Multi-Financial Year</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Busy 21 Pricing -->
+
+    <div class="price">
+        <h1>Busy 21 Pricing</h1>
+        <div id="price">
+            <div class="basic">
+                <h2>Basic</h2>
+                <h3>₹ 9999 /-</h3>
+                <p>Singal User</p>
+                <h3>₹ 24999 /-</h3>
+                <p>Multi User</p>
+                <a href="contactus.html"><button>Start 30 Day trail Free</button></a>
+            </div>
+            <div id="basic">
+                <h2>Standard</h2>
+                <h3>₹ 14999 /-</h3>
+                <p>Singal User</p>
+                <h3>₹ 39999 /-</h3>
+                <p>Multi User</p>
+                <a href="contactus.html"><button>Start 30 Day trail Free</button></a>
+            </div>
+            <div class="basic">
+                <h2>Enterprise</h2>
+                <h3>₹ 19999 /-</h3>
+                <p>Singal User</p>
+                <h3>₹ 57999 /-</h3>
+                <p>Multi User</p>
+                <a href="contactus.html"><button>Start 30 Day trail Free</button></a>
+            </div>
+        </div>
+
+        <p id="note">Note: The above pricing excludes GST. Implementation and support charges are extra as applicable.
+        </p>
+        <h1>Any Questions?</h1>
+        <p class="note">You can share your details with us and our BUSY expert will get in touch with you to help you
+            choose the
+            right software as per your business needs.</p>
+        <a href="contactus.html"><button class="learn">Learn More</button></a>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer">
+            <div id="footer">
+                <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
+                <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
+                    in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
+            </div>
+            <div class="useful">
+                <h2>Useful Link</h2>
+                <ul id="useful">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="datahosting.html">Data Hosting</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                    <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h2>Quick Link</h2>
+                <ul id="useful">
+                    <li><a href="term.html">Terms & Condition</a></li>
+                    <li><a href="Privacy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Registered Office :</span>
+                <p class="register">A-204, Sunnidhi Park, Nr.PMC Bank, New Link Road, Vasai(East), Thane-401209.</p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9320763716</span>
+
+            </div>
+
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Sales Office:</span>
+                <p class="register">D-212, Shanti Shopping Center, Nr.Railway Station, Mira Road(East), Mumbai-401107
+                </p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9270052306/9120004004</span>
+
+            </div>
+        </div>
+
+        <img src="image/busy-logo.jpg" alt="" srcset="" id="busylogo">
+
+        <div class="footer-font">
+            <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <hr>
+        <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
+        </p>
+    </footer>
+
+    <script>
+        var rows = document.getElementById("myTable").getElementsByTagName("tr");
+
+        // Loop through each row and add click event listener
+        for (var i = 0; i < rows.length; i++) {
+            rows[i].addEventListener("click", function () {
+                // Reset background color of all rows
+                for (var j = 0; j < rows.length; j++) {
+                    rows[j].style.backgroundColor = "";
+                }
+                // Set background color of clicked row
+                this.style.backgroundColor = "#ccc"; // Change to desired color
+            });
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

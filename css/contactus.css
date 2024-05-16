@@ -1,0 +1,304 @@
+
+
+.CONTACT {
+    display: flex;
+    margin-top: 5px;
+    background-color: #efefef;
+    padding-top: 10px;
+
+}
+
+.CONTACT h2 {
+    margin-left: 88px;
+    font-size: 44px;
+    margin-top: 3px;
+}
+
+.CONTACT img {
+    width: 133px;
+    height: 69px;
+    margin-top: -5px;
+    margin-left: 772px;
+}
+
+#CONTACT {
+    margin-left: 451px;
+
+}
+
+#CONTACT input {
+    width: 420px;
+    margin: 8px;
+    height: 35px;
+    padding-left: 20px;
+    opacity: 0.6;
+}
+
+#CONTACT textarea {
+    width: 420px;
+    margin: 8px;
+    padding-left: 20px;
+
+    opacity: 0.6;
+}
+
+#CONTACT button {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 113px;
+
+    padding: 4px;
+    width: 208px;
+}
+
+/* Add MAP */
+.map {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 124px;
+
+}
+
+#map {
+    width: 300px;
+    height: 190px;
+    margin-left: 64px;
+    background-color: #efefef;
+ 
+}
+
+#map i {
+    background-color: red;
+    color: white;
+    margin-top: 5px;
+    margin-left: 114px;
+    width: 61px;
+    height: 58px;
+    border-radius: 50%;
+    font-size: 32px;
+    padding-left: 18px;
+    padding-top: 10px;
+}
+
+#map h5 {
+    text-align: center;
+}
+
+#map p {
+    text-align: center;
+}
+
+#ma {
+    width: 300px;
+    height: 190px;
+    margin-left: 64px;
+    background-color: #efefef;
+}
+
+#ma i {
+    background-color: red;
+    color: white;
+    margin-top: 5px;
+    margin-left: 114px;
+    width: 61px;
+    height: 58px;
+    border-radius: 50%;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+
+#ma h5 {
+    text-align: center;
+}
+
+#ma p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#m {
+    width: 300px;
+    height: 190px;
+    background-color: #efefef;
+    margin-left: 64px;
+}
+
+#m i {
+    background-color: red;
+    color: white;
+    margin-top: 5px;
+    margin-left: 114px;
+    width: 61px;
+    height: 58px;
+    border-radius: 50%;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+
+#m h5 {
+    text-align: center;
+}
+
+#m p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* MAP ADD */
+.contain{
+    margin-top: 40px;
+    height: 500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(185, 181, 181);
+}
+footer{
+    background-color: #efefef;
+    padding: 40px;
+    margin-top: 0px;
+}
+
+@media (max-width:600px) {
+
+    .CONTACT {
+        height: 64px;
+    }
+    
+    .CONTACT h2 {
+      
+        margin-left: 6px;
+        width: 253px;
+        font-size: 26px;
+        margin-top: 6px;
+    }
+    
+    .CONTACT img {
+        width: 124px;
+        height: 61px;
+        margin-top: -2px;
+        margin-left: -12px;
+    }
+    
+    #CONTACT {
+        margin-left: 37px;
+        position: absolute;
+    
+    }
+   
+    #CONTACT input {
+        width: 320px;
+        margin: 8px;
+        height: 35px;
+        padding-left: 20px;
+        opacity: 0.6;
+    }
+    
+    #CONTACT textarea {
+        width: 320px;
+        margin: 8px;
+        padding-left: 20px;
+        opacity: 0.6;
+    }
+    
+    #CONTACT button {
+        margin-left: 69px;
+    }
+    
+    /* Add MAP */
+    .map {
+        margin-top: 356px;
+        display: block;
+        margin-left: 27px;
+        position: absolute;
+    
+    }
+    
+    #map {
+        width: 338px;
+        height: 219px;
+        margin-left: -1px;
+        background-color: #efefef;
+     
+    }
+    
+    #map i {
+        margin-left: 137px;
+    }
+    
+    #map h5 {
+        text-align: center;
+    }
+    
+    #map p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #ma {
+        width: 335px;
+        margin-top: 11px;
+        height: 219px;
+        margin-left: -1px;
+        background-color: #efefef;
+    }
+    
+    #ma i {
+        margin-left: 137px;
+    }
+    
+    #ma h5 {
+        text-align: center;
+    }
+    
+    #ma p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #m {
+        width: 335px;
+        margin-top: 11px;
+        height: 219px;
+        margin-left: -1px;
+        background-color: #efefef;
+    }
+    
+    #m i {
+        margin-left: 137px;
+    }
+    
+    #m h5 {
+        text-align: center;
+    }
+    
+    #m p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /* MAP ADD */
+    .contain{
+        margin-top: 1051px;
+        width: 385px;
+        margin-left: 3px;
+        position: relative;
+    }
+    #upgrade {
+        z-index: 1;
+        display: none;
+    }
+
+    footer{
+        background-color: #efefef;
+        width: 102%;
+        padding-top: 137px !important;
+        margin-top: 17px !important;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
+}

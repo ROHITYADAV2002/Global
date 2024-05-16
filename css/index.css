@@ -1,0 +1,1073 @@
+/* NEED HELP SECTION */
+.need {
+    background-color: #005DA4;
+    position: static;
+    display: block;
+    height: 38px;
+}
+
+#help {
+    color: white;
+    cursor: pointer;
+    padding: 1vh 13vh;
+    font-weight: bold;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin-right: 271px;
+    margin-top: -39px;
+}
+
+#need a {
+    color: white;
+    font-weight: 100%;
+    text-decoration: none;
+    float: right;
+    margin-right: 75px;
+    margin-top: -43px;
+}
+
+/* Need popup form */
+/* .req{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+} */
+
+/* POPUP FORM */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.loginform {
+    width: 330px;
+    height: 378px;
+    background-color: #e9e0e0;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -60%;
+    z-index: 9;
+    transition: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    transform: translate(-50%, -69%);
+}
+
+.loginform input {
+    height: 29px;
+    border: 2px solid black;
+}
+
+.loginform button {
+    float: right;
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.showloginform {
+    top: 50%;
+}
+
+.loginform span {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: #79b3a9;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+
+/* LOGO SECTION */
+
+.logo {
+    height: 80px;
+}
+
+#logo {
+    width: 164px;
+    display: flex;
+    margin-left: 102px;
+    margin-top: 10px;
+}
+
+.mail {
+    float: right;
+    margin-right: 111px;
+    margin-top: -59px;
+}
+
+.mail span {
+    display: block;
+    margin-left: 37px;
+    margin-top: -31px;
+    font-size: 20px;
+}
+
+.fa-envelope {
+    color: blue;
+    font-size: 29px;
+}
+
+#mail {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    color: black;
+}
+
+/* NavBar section enquri button */
+.nav-link :hover {
+    color: red;
+
+}
+
+.over {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.login {
+    width: 330px;
+    height: 500px;
+    background-color: rgb(83, 83, 119);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -530%;
+    z-index: 9;
+    transition: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    transform: translate(-50%, -69%);
+}
+
+.login input {
+    height: 29px;
+    border: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.form-label {
+    color: white;
+}
+
+.login button {
+    float: right;
+
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.showlogin {
+    top: 430%;
+}
+
+.login span {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: #79b3a9;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+
+.login h4 {
+    color: white;
+}
+
+.now {
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+}
+
+
+/* Slider section */
+.slider img {
+    height: 450px;
+}
+
+.carousel-control-next {
+    background-color: green;
+    height: 30px;
+    margin-top: 213px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 63%;
+    margin-right: 85px;
+}
+
+.carousel-control-prev {
+    background-color: green;
+    height: 30px;
+    margin-top: 213px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 63%;
+    margin-left: 85px;
+}
+
+/* SLIDER ENQUIR BUTTON */
+
+.enquir {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.log {
+    width: 330px;
+    height: 500px;
+    background-color: rgb(83, 83, 119);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -530%;
+    z-index: 9;
+    transition: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    transform: translate(-50%, -69%);
+}
+
+.log input {
+    height: 29px;
+    padding-bottom: 5px;
+}
+
+.form-label {
+    color: white;
+}
+
+.view {
+    opacity: 1;
+    z-index: 1;
+}
+
+.viewlog {
+    top: 65%;
+}
+
+.log span {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: #79b3a9;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+
+.log h4 {
+    color: white;
+}
+
+#enquri {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-top: -242px;
+    position: absolute;
+    margin-left: 135px;
+    width: 12%;
+}
+
+/* About us */
+
+.who {
+    display: flex;
+    margin-top: 33px;
+}
+
+#who {
+    margin-left: 111px;
+    margin-top: 90px;
+}
+
+.we {
+    color: blue;
+    font-size: 30px;
+}
+
+#we {
+    width: 342px;
+    font-weight: 160%;
+}
+
+#we span {
+    color: green;
+}
+
+.global {
+    width: 518px;
+    font-size: 20px;
+    color: gray;
+    margin: 5px 0px 5px;
+}
+
+.read button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    width: 23%;
+    font-size: 19px;
+    cursor: pointer;
+
+}
+
+/*  products section */
+.products {
+    text-align: center;
+    font-size: 44px;
+}
+
+#products {
+    text-align: center;
+    justify-self: center;
+    color: green;
+    font-size: 30px;
+}
+
+.carditem {
+    display: flex;
+    height: 400px;
+}
+
+.card-img-top {
+    width: 464px;
+    height: 211px !important;
+
+}
+
+.card-title {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.card {
+    margin-left: 130px;
+    border: none;
+    width: 29rem;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#carouselExampleDark {
+    background-color: rgb(243 243 243);
+    padding: 20px;
+}
+
+.carousel-control1 {
+    margin-top: -200px;
+    background-color: rgb(181, 241, 181);
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    position: absolute;
+
+}
+
+.carousel-control2 {
+    margin-top: -200px;
+    background-color: rgb(181, 241, 181);
+    border-radius: 50%;
+    float: right;
+    border: none;
+    padding: 5px;
+
+}
+
+.card-text {
+    font-family: Mate;
+}
+
+/* service */
+.service {
+    background-color: rgb(199 241 241);
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+#service {
+    color: rgb(45, 45, 247);
+    padding-top: 30px;
+    margin-left: 90px;
+}
+
+#ser {
+    font-size: 30px;
+    width: 757px;
+    margin-left: 91px;
+    font-weight: 600;
+}
+
+#ser span {
+    color: green;
+}
+
+.row {
+    margin-left: -23px;
+    width: 1259px;
+    padding-left: 143px;
+
+}
+
+.card1 {
+    background-color: white;
+    border-radius: 10px;
+    height: 360px;
+}
+
+.service img {
+    width: 191px;
+    height: 90px;
+    padding-top: 10px;
+    padding-left: 67px;
+}
+
+/* Why choose us */
+
+#why {
+    margin-top: 40px;
+    text-align: center;
+    color: blue;
+}
+
+#us {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    width: 784px;
+    margin-left: 250px;
+}
+
+#us span {
+    color: green;
+}
+
+.us {
+    display: flex;
+}
+
+.us img {
+    margin-left: 196px;
+    margin-top: 87px;
+    width: 300px;
+    height: 250px;
+
+}
+
+.us p {
+    font-family: Mate;
+    width: 686px;
+    font-size: 23px;
+    margin-left: 229px;
+    margin-top: 6px;
+}
+
+.most {
+
+    float: right;
+    width: 615px;
+    font-size: 16px;
+    margin-right: 38px;
+    margin-top: -70px;
+    font-family: cursive;
+}
+
+/* footer section */
+
+
+footer {
+    background-color: #efefef;
+    padding: 40px;
+    margin-top: 228px;
+
+}
+
+.footer {
+    display: flex;
+}
+
+
+#footer img {
+    width: 312px;
+    height: 149px;
+    margin-top: -25px;
+}
+
+#footer {
+    margin-left: 70px;
+
+}
+
+#footer p {
+    width: 451px;
+    padding-top: 10px;
+    color: black;
+    font-size: 20px;
+    margin-top: -16px;
+}
+
+.useful {
+    margin-left: 93px;
+}
+
+.quick {
+    padding-left: 106px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#useful {
+    font-size: 20px;
+}
+
+a:hover {
+    color: green;
+}
+
+.contact {
+    display: flex;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+#contact .fa-phone {
+    margin-top: 4px;
+    margin-left: -2px;
+    color: blue;
+    position: absolute;
+}
+
+#contact {
+    margin-top: 46px;
+    margin-left: -79px;
+    margin-right: 200px;
+}
+
+.fa-location-dot {
+    color: rgb(31, 31, 202);
+    padding-right: 20px;
+}
+
+#register {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.register {
+    width: 298px;
+    font-weight: 200;
+    margin-left: 32px;
+    padding: 5px;
+}
+
+#mo {
+    margin-left: 27px;
+}
+
+#busylogo {
+    width: 138px;
+    height: 60px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-font {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer-font a i {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#copy {
+    padding-top: 20px;
+    margin-left: 206px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width :600px) {
+
+    /* Need help section */
+    .need {
+        height: 81px;
+    }
+
+    #help {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .fa-phone {
+        margin-left: 117px;
+        position: absolute;
+    }
+
+    #need a {
+        color: white;
+        font-weight: 100%;
+        text-decoration: none;
+        /* float: right; */
+        margin-left: 146px;
+        margin-right: -191px;
+        margin-top: -45px;
+    }
+
+    #need {
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    #no {
+        margin-left: 190px;
+        position: absolute;
+        font-size: 16px;
+    }
+
+    .loginform {
+        width: 200px;
+        height: 350px;
+        padding: 2px;
+        top: -50px;
+        transform: translate(-50%, -89%);
+    }
+
+    .showloginform {
+        top: 63%;
+    }
+
+    .loginform span {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: -30px;
+        width: 25px;
+        cursor: pointer;
+        height: 25px;
+        line-height: 25px;
+        background-color: #79b3a9;
+        text-align: center;
+        color: rgb(240, 235, 235);
+        border-radius: 50%;
+        font-size: 20px;
+
+    }
+
+
+    /* Logo section */
+    #logo {
+        margin-left: 115px;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    /* Enqurie Button */
+    header {
+        margin-top: -39px;
+        padding-left: 1px;
+
+    }
+
+    .login {
+        display: none;
+    }
+
+    /* Slider section */
+
+    .slider img {
+        height: 250px;
+    }
+
+    .carousel-control-next {
+        margin-top: 112px;
+        margin-right: 6px;
+    }
+
+    .carousel-control-prev {
+        margin-top: 112px;
+        margin-left: 6px;
+    }
+
+    /* /* slider enquri button * */
+
+    .viewlog {
+        top: 107%;
+    }
+
+    #enquri {
+        margin-top: -144px;
+        margin-left: 54px;
+        width: 32%;
+    }
+
+    /* About Us */
+    #who {
+        margin-top: -20px;
+        margin-left: 26px;
+    }
+
+    .global {
+        width: 333px;
+        margin-top: 78%;
+    }
+
+    .read button {
+        width: 110px;
+    }
+
+    .we-are img {
+        margin-top: 109px;
+        margin-left: -293px;
+        width: 286px;
+    }
+
+    /* Products section */
+
+    #products {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    .card-body {
+        width: 364px;
+        padding-left: 43px;
+    }
+
+
+    .carditem {
+        display: block;
+        height: 400px;
+        margin-left: -108px;
+    }
+
+    .card-img-top {
+        width: 400px;
+        height: 211px;
+
+    }
+
+    .card-title {
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    .card {
+        margin-left: 84px;
+        border: none;
+        width: 25rem;
+    }
+
+    #card8 {
+        /* margin-left: 86px !important; */
+        margin-left: 93px;
+    }
+
+    .carousel-control {
+        margin-top: 100px;
+    }
+
+    .carousel-control {
+        margin-top: 100px;
+    }
+
+    /* Service */
+    .service {
+        padding-left: 48px;
+        height: 528px;
+    }
+
+    #service {
+        text-align: center;
+        margin-left: -45px;
+    }
+
+
+    #ser {
+        font-size: 17px;
+        width: 302px;
+        text-align: center;
+        margin-left: -5px;
+    }
+
+    #ser span {
+        color: green;
+    }
+
+    .row {
+        width: 420px;
+        padding-left: 10px;
+
+    }
+
+    #row1 {
+        display: none;
+    }
+
+    #row2 {
+        display: flex;
+    }
+
+    .card1 {
+        height: 308px;
+        position: absolute;
+        width: 369px;
+        margin-left: -34px;
+    }
+
+    .service img {
+        width: 238px;
+        height: 90px;
+        padding-top: 12px;
+        position: static;
+        padding-left: 166px;
+    }
+
+    #carousel-control-prev {
+        margin-top: 192px;
+        margin-left: -38px;
+        position: relative;
+
+    }
+    .carouselExampleControls{
+        margin-left: -19px;
+    }
+
+    /* Why choose us */
+    #whyChoose {
+        height: 784px;
+    }
+
+    #why {
+        text-align: center;
+        color: blue;
+    }
+
+    #us {
+        font-size: 13px;
+        text-align: center;
+        margin-left: 96px;
+        width: 184px;
+    }
+
+    #us span {
+        color: green;
+    }
+
+    .us {
+        display: block;
+    }
+
+    .us img {
+        margin-left: 136px;
+        margin-top: -12px;
+        width: 97px;
+        height: 91px;
+    }
+
+    .us p {
+        width: 370px;
+        font-size: 20px;
+        margin-left: 12px;
+        margin-top: 1px;
+
+    }
+
+
+    .most {
+        width: 389px;
+        position: absolute;
+        margin-left: -7px;
+        font-size: 13px;
+        margin-right: 10px;
+        margin-top: -7px;
+    }
+
+    /* FOOTER SECTION */
+    footer {
+        width: 100%;
+        padding-top: 137px;
+        margin-top: -99px;
+    }
+
+    .footer {
+        display: block;
+        margin: 5px;
+    }
+
+    #footer {
+        margin-left: 8px;
+        margin-top: -118px !important;
+    }
+
+    #footer img {
+        margin-left: 41px;
+        width: 199px;
+        margin-top: -19px;
+        height: 95px;
+    }
+
+    #footer p {
+        width: 340px;
+        font-size: 20px;
+        margin-left: -10px;
+        margin-top: -17px;
+
+    }
+
+    .useful {
+        margin-top: 26px;
+        margin-left: -2px;
+        font-size: 30px;
+    }
+
+    .quick {
+        margin-top: 20px;
+        font-size: 30px;
+        margin-left: -107px;
+    }
+
+    .contact h2 {
+        margin-left: -99px
+    }
+
+    .contact {
+        display: block;
+        margin-left: 65px;
+        margin-top: 42px;
+    }
+
+    .contact {
+        margin-left: 82px;
+    }
+
+    #contact {
+        margin-top: 15px;
+        margin-left: -79px;
+        margin-right: 200px;
+    }
+
+    #contract {
+        display: flex;
+    }
+
+    .fa-location-dot {
+        color: rgb(31, 31, 202);
+        padding-right: 20px;
+        font-size: 25px;
+    }
+
+    #register {
+        font-weight: bold;
+        padding-bottom: 5px;
+        position: absolute;
+        margin-left: 30px;
+    }
+
+    .register {
+        width: 298px;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 32px;
+        padding: 5px;
+    }
+
+    #contact .fa-phone {
+        font-size: 25px;
+    }
+
+    #busylogo {
+        margin-top: 20px;
+        margin-right: -25px;
+    }
+
+    #mo {
+        margin-left: 40px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    #copy {
+        margin-left: -48px;
+        text-align: center;
+        width: 405px;
+    }
+
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
+}

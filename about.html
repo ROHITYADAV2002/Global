@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBS About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/privacy.css">
+    <style>
+        #upgrade{
+            margin-top: 350px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- NEED HELP SECTION -->
+    <div class="need">
+        <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
+        <div class="overlay"></div>
+        <div class="loginform">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
+                <h4>Request a Call</h4>
+                <span onclick="closeModle()">&times;</span>
+                <hr>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    <p id="userError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address"
+                        required>
+                    <p id="emailError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" name="email" id="phone" placeholder="Mobile No." required>
+                    <p id="phoneError" class="error"></p>
+                    <hr>
+                </div>
+                <a href=""> <button type="submit" class="btn btn-primary">Sent Request</button> </a>
+            </form>
+        </div>
+        <div id="need">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:9320763716 /9120004004" id="no">9320763716 / 9120004004</a>
+        </div>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
+        <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Mail Us For Support</span>
+            <a href="mailto:gbs.mumbai@gmail.com" id="mail">gbs.mumbai@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: cursive;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learnBusy.html">Learn Busy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
+                        <button onclick="show() " class="now">Enquire
+                            Now</button>
+                        <div class="over"></div>
+                        <div class="login">
+
+                            <h4>Contact</h4>
+                            <span onclick="closem()">&times;</span>
+                            <hr>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="company" id="Company"
+                                    placeholder=" Company Name" required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="address" placeholder="Address 1"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Address 1</label>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="remarks" placeholder="Address 2"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Remarks</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" id="name"
+                                    placeholder="Enter Your Name" required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id"
+                                    required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="city" id="city" placeholder="City"
+                                    required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No."
+                                    required>
+                                <p id="phoneError" class="error"></p>
+                                <hr>
+                            </div>
+                            <a href=""> <button type="submit" class="btn btn-primary">Sumbit</button> </a>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--  Upgrad For Software -->
+
+    <div id="upgrade">
+        <button class="upgrade" onclick="openpo()">Upgrade for Software</button>
+
+        <div class="po" id="po">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST">
+                <h2>Upgrade Your Software</h2>
+                <span onclick="closepo()">&times;</span>
+                <hr>
+                <input type="text" name="busy" id="busysr" placeholder="Busy Sr">
+                <br>
+                <input type="text" name="company" id=" co.name" placeholder="Company Name">
+                <br>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="tel" name="phone" id="mobile" placeholder="Mobile No.">
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email Id">
+                <input type="text" name="city" id="city" placeholder="City">
+                <br>
+                <textarea name="Remarks" id="" cols="30" rows="2">Remarks</textarea>
+                <hr>
+                <button type="sumbit">Sumbit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <img src="image/busy-group-pic (1).jpg" alt="" srcset="">
+    </div>
+
+    <!-- Mission -->
+    <div >
+        <div class="innerPage">
+            <span class="aboutUsCount">1</span>
+            <h3>Mission</h3>
+            <p class="fs24">
+                Provide easy-to-use, user-friendly, configurable and feature-rich accounting software that makes it
+                super
+                easy for small businesses to manage their billing, accounting, inventory & GST compliances. We are
+                committed
+                to offering cost-effective solutions that help businesses save time and money while ensuring compliance
+                and
+                accuracy.
+            </p>
+        </div>
+
+        <div class="innerPage" id="row">
+            <span class="aboutUsCount">2</span>
+            <h3>Philosophy</h3>
+            <p class="fs24">
+                Every business should have access to dependable and user-friendly accounting software, regardless of
+                their
+                scale. We will deliver affordable solutions that streamline biling, accounting, inventory management and
+                tax
+                compliance. We will back our product with unparalleled customer service, support and training programs
+                that
+                help our clients in increasing productivity and grow their business
+            </p>
+        </div>
+    </div>
+    <!--Key Event Feature -->
+    
+    <div class="innerPageBg pb50 blueBg">
+        <div class="container width80">
+            <div class="row">
+                <div class="col s12 center-text">
+                    <h3 class="mb30">Key Events in Our History</h3>
+                    <p class="fs20">As we have grown over the years, we’ve helped thousands of businesses grow to their
+                        fullest. Here’s our story in a snapshot</p>
+                
+                </div>
+                <div class="col s12">
+                    <div class="timelineEntry">
+                        <div class="date">1993</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event1993"></span> </div>
+                            <div class="eventDescription" id="eventDescription"> BUSY’s first version was introduced with Financial Accounting
+                                and Sales Tax Reports. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">1994</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event1994"></span> </div>
+                            <div class="eventDescription" id="event"> Officially launched BUSY with Invoicing and Inventory
+                                features. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2000</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event2000"></span> </div>
+                            <div class="eventDescription" id="eventDescription"> The company transitioned to a Windows-based application,
+                                simplifying the product portfolio into three standardised categories. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2005</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event2005"></span> </div>
+                            <div class="eventDescription" id="event"> BUSY swiftly adapted to VAT in Delhi by introducing a
+                                VAT-Compliant Version. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2008</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event2008"></span> </div>
+                            <div class="eventDescription" id="eventDescription"> BUSY expanded its presence into the Middle East market.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2009</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event2009"></span> </div>
+                            <div class="eventDescription" id="event"> The company launched a pioneering Remote Access Edition,
+                                providing users with anytime, anywhere access to accounting data via the Internet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2012</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event2012"></span> </div>
+                            <div class="eventDescription" id="eventDescription"> BUSY introduced BUSY 12, featuring enhanced functionalities
+                                like Quotation, Customizable Reports, SMS/E-mail Access, and AutoBack-up. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2014</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event2014"></span> </div>
+                            <div class="eventDescription" id="event"> BUSY 14 launched with new features including Triggers &amp;
+                                Alerts (SMS/E-mail), Payroll, and Browser-based Data Access. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2016</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event2016"></span> </div>
+                            <div class="eventDescription" id="eventDescription"> BUSY 16 launched with a wide range of new business features,
+                                including Enquiries Management and Customer Support Management. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2017</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event2017"></span> </div>
+                            <div class="eventDescription" id="event"> BUSY 17, was released with GST features to help businesses in
+                                India comply with the new tax regime. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2018</div>
+                        <div class="event eventLeft">
+                            <div class="eventImage"> <span class="eventsSprite event2018"></span> </div>
+                            <div class="eventDescription" id="eventDescription" > BUSY 18 was unveiled with an Auto E-waybill Solution for
+                                Indian users, as well as an extensive VAT Solution designed specifically for GCC
+                                countries. </div>
+                        </div>
+                    </div>
+                    <div class="timelineEntry">
+                        <div class="date">2019</div>
+                        <div class="event eventRight">
+                            <div class="eventImage"> <span class="eventsSprite event2019"></span> </div>
+                            <div class="eventDescription" > BUSY introduced innovative and powerful in-built GSP features
+                                like Auto GSTR 1 / 2A / 2B / 3B Reconciliation and GSTIN / HSN Validation, etc. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer">
+            <div id="footer">
+                <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
+                <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
+                    in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
+            </div>
+            <div class="useful">
+                <h2>Useful Link</h2>
+                <ul id="useful">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="datahosting.html">Data Hosting</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                    <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h2>Quick Link</h2>
+                <ul id="useful">
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="Privacy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Registered Office :</span>
+                <p class="register">A-204, Sunnidhi Park, Nr.PMC Bank, New Link Road, Vasai(East), Thane-401209.</p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9320763716</span>
+
+            </div>
+
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Sales Office:</span>
+                <p class="register">D-212, Shanti Shopping Center, Nr.Railway Station, Mira Road(East), Mumbai-401107
+                </p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9270052306/9120004004</span>
+
+            </div>
+        </div>
+
+        <img src="image/busy-logo.jpg" alt="" srcset="" id="busylogo">
+
+        <div class="footer-font">
+            <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <hr>
+        <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
+        </p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

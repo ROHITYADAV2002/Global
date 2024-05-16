@@ -1,0 +1,619 @@
+.busy {
+    display: flex;
+    width: 100%;
+}
+
+.animat {
+    width: 450px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#busy {
+    background-color: rgb(247, 237, 237);
+    width: 700px;
+    height: 380px;
+    margin-left: 100px;
+}
+
+#busy h1 {
+    color: rgb(39, 39, 245);
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+    font-size: 3rem;
+    animation: h1 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h1 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(2%);
+        opacity: 1;
+    }
+}
+
+.lorem {
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 50%;
+    animation: lorem 3s ease 0s 1 normal forwards;
+}
+
+@keyframes lorem {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-45%);
+        opacity: 1;
+    }
+}
+
+/* BUSY INFO */
+.info {
+    display: flex;
+    width: 1348px;
+    height: 600px;
+}
+
+.info img {
+    animation: img 3s ease 0s 1 normal forwards;
+}
+
+@keyframes img {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(70%);
+        opacity: 1;
+    }
+}
+
+#info h2 {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: h2 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h2 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#info1 h2 {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: h2 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h2 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#info {
+    background-color: rgb(66, 135, 245);
+    width: 550px;
+    padding-top: 50px;
+}
+
+#info1 {
+    background-color: rgb(135, 135, 135);
+    width: 550px;
+    padding-top: 50px;
+}
+
+#info p {
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    animation: p 3s ease 0s 1 normal forwards;
+}
+
+@keyframes p {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 1;
+    }
+}
+
+#info1 p {
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    animation: p 3s ease 0s 1 normal forwards;
+}
+
+@keyframes p {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 1;
+    }
+}
+
+#info button {
+    border: 1px solid white;
+    width: 206px;
+    position: absolute;
+    margin-left: 119px;
+    padding: 5px;
+    margin-top: -171px;
+    background-color: rgb(66, 135, 245);
+    color: white;
+}
+
+#info1 button {
+    border: 1px solid white;
+    width: 206px;
+    position: absolute;
+    margin-left: 119px;
+    padding: 5px;
+    margin-top: -171px;
+    background-color: rgb(135, 135, 135);
+    color: white;
+}
+
+#info a button:hover {
+    background-color: red;
+    border: none;
+}
+
+#info1 a button:hover {
+    background-color: red;
+    border: none;
+}
+
+/* Choose Your Busy */
+.choose {
+    margin-top: 30px;
+}
+
+.choose h1 {
+    text-align: center;
+    color: blue;
+}
+
+.divScroll {
+    margin-left: 227px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+    width: 900px;
+    border: 2px solid rgb(189, 183, 183);
+}
+
+table,
+th {
+    border: 1px solid rgb(190, 185, 185);
+    padding: 13px 70px;
+    text-align: center;
+
+}
+
+#heading {
+    background-color: rgb(66, 135, 245) !important;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid rgb(190, 185, 185);
+    padding: 10px 0;
+}
+
+#tcs {
+    background-color: #cfd1d1 !important;
+    font-size: 16px;
+    width: 320px !important;
+}
+
+/* Busy Pricing */
+.price {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f6f0fa;
+}
+
+.price h1 {
+    text-align: center;
+    color: blue;
+    opacity: 0;
+    animation: h1 3s ease 0s 1 normal forwards;
+    margin-bottom: 20px;
+}
+
+@keyframes h1 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(2%);
+        opacity: 1;
+    }
+}
+
+#price {
+    display: flex;
+
+}
+
+.basic {
+    width: 500px;
+    height: 317px;
+    background-color: #4765fc;
+
+}
+
+.basic h2 {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.basic h3 {
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.basic p {
+    text-align: center;
+    color: white;
+}
+
+.basic button {
+    border: none;
+    margin-left: 144px;
+    padding: 5px;
+    color: #4765fc;
+}
+
+#basic {
+    width: 500px;
+    height: 317px;
+}
+
+#basic h2 {
+    text-align: center;
+    color: #4765fc;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+#basic h3 {
+    text-align: center;
+    color: #4765fc;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#basic p {
+    text-align: center;
+    color: #4765fc;
+}
+
+#basic button {
+    border: none;
+    margin-left: 144px;
+    padding: 5px;
+    color: white;
+    background-color: #4765fc;
+}
+
+#note {
+    text-align: center;
+    color: red;
+    padding: 20px;
+}
+
+.note {
+    font-size: 18px;
+    margin-left: 384px;
+    width: 616px;
+}
+
+.learn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 629px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
+
+@media(max-width:600px) {
+    /* Busy Products */
+
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
+
+    .busy {
+        display: block;
+        width: 100%;
+    }
+
+    .animat {
+        width: 249px;
+        height: 150px;
+        margin-left: 76px;
+        margin-top: 15px;
+    }
+
+    #busy {
+        display: block;
+        background-color: rgb(247, 237, 237);
+        width: 525px;
+        height: 313px;
+        margin-left: 0px;
+    }
+
+    #busy h1 {
+        color: rgb(39, 39, 245);
+        text-align: center;
+        margin-top: 30px;
+        opacity: 0;
+        margin-left: -153px;
+        font-size: 3rem;
+    }
+
+    .lorem {
+        width: 326px;
+        margin-top: 17px;
+        margin-left: 176px;
+    }
+
+    /* BUSY INFO */
+    .info {
+        display: block;
+        margin-left: 0px;
+        margin-top: 14px;
+    }
+
+    #info h2 {
+        text-align: center;
+        color: white;
+        opacity: 0;
+    }
+
+
+    #info1 h2 {
+        text-align: center;
+        color: white;
+        opacity: 0;
+        margin-left: -72px;
+
+    }
+
+    .info img {
+        margin-left: -32px;
+    }
+
+    #info {
+        background-color: rgb(66, 135, 245);
+        width: 389px;
+        height: 527px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #info button {
+        border: 1px solid white;
+        width: 206px;
+        position: absolute;
+        margin-left: 89px;
+        padding: 5px;
+        margin-top: -142px;
+        background-color: rgb(66, 135, 245);
+        color: white;
+    }
+
+    #info1 {
+        background-color: rgb(135, 135, 135);
+        width: 461px;
+        height: 527px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #info p {
+        font-size: 17px;
+        width: 374px;
+        margin-left: -8px;
+        height: 307px;
+    }
+
+
+    #info1 p {
+        font-size: 16px;
+        width: 388px;
+        height: 307px;
+        margin-left: -20px;
+        ;
+    }
+
+    #info1 button {
+        margin-left: 83px;
+        margin-top: -153px;
+    }
+
+    /* Choose Your Busy */
+    .choose {
+        margin-top: 1042px;
+    }
+
+    .choose h1 {
+        text-align: center;
+        color: blue;
+    }
+
+    .divScroll {
+        margin-left: -3px;
+        margin-top: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 350px;
+        width: 393px;
+    }
+
+    table,
+    th {
+        border: 1px solid rgb(190, 185, 185);
+        padding: 1px 10px;
+        text-align: center;
+
+    }
+
+    #heading {
+        background-color: rgb(66, 135, 245) !important;
+        color: white;
+        font-size: 16px;
+    }
+
+    td {
+        border: 1px solid rgb(190, 185, 185);
+        padding: 10px 0;
+    }
+
+    #tcs {
+        background-color: #cfd1d1 !important;
+        font-size: 16px;
+        width: 320px !important;
+    }
+
+    /* Busy Pricing */
+    .price {
+        width: 100%;
+        margin-top: 20px;
+        background-color: #f6f0fa;
+    }
+
+    .price h1 {
+        text-align: center;
+        color: blue;
+        margin-left: -11px;
+        margin-bottom: 20px;
+    }
+
+
+    #price {
+        display: block;
+
+    }
+
+    .basic {
+        width: 390px;
+        margin-left: -1px;
+        height: 317px;
+        background-color: #4765fc;
+
+    }
+    .basic button {
+        border: none;
+        margin-left: 119px;
+    }
+
+
+    #basic {
+        width: 387px;
+        margin-left: 2px;
+        height: 317px;
+        background-color: white;
+    }
+    #basic button {
+        border: none;
+        margin-left: 115px;
+    }
+
+
+
+    #note {
+        width: 398px;
+    }
+
+    .note {
+        text-align: center;
+        font-size: 16px;
+        margin-left: 3px;
+        width: 377px;
+    }
+
+    .learn {
+        margin-left: 133px;
+    }
+
+    footer {
+        width: 100%;
+        padding-top: 137px;
+        margin-left: -3px;
+    }
+
+    #footer p {
+        width: 383px;
+        font-size: 20px;
+        margin-left: -41px;
+        margin-top: -12px;
+    }
+}

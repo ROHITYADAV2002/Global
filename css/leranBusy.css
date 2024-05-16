@@ -1,0 +1,550 @@
+marquee {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.learn {
+    margin-left: 127px;
+}
+
+#learn {
+    margin-left: 127px;
+    margin-top: 34px;
+    font-weight: 800;
+}
+
+#learnbusy {
+    float: right;
+    width: 254px;
+    margin-right: 65px;
+    margin-top: -129px;
+    height: 181px;
+}
+
+/* Contact us For Job */
+#contactus {
+    background-color: #7171e3;
+    color: white;
+    border: none;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 363px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.popup {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.popup h3 {
+    color: blue;
+}
+
+.popup h4 {
+    text-align: center;
+    color: #7171e3;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 40%;
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+}
+
+.popup button {
+    float: right;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 90px;
+}
+
+/* Send Resume */
+#cont {
+    background-color: #7171e3;
+    color: white;
+    border: none;
+    width: 190px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 28px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pop {
+    width: 500px;
+    background-color: rgb(70, 70, 240);
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 1s, top 1s;
+}
+
+.open-pop {
+    visibility: visible;
+    top: 40%;
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+}
+
+.pop h2 {
+    color: white;
+}
+
+.pop hr {
+    color: white;
+}
+
+#popname {
+    width: 420px;
+    border: none;
+    border-radius: 6px;
+    padding-left: 30px;
+    margin: 10px;
+    height: 35px;
+}
+
+#nam {
+    border: none;
+    width: 195px;
+    border-radius: 6px;
+    padding-left: 15px;
+    margin: 10px;
+    height: 35px;
+}
+
+#lab {
+    margin: 13px;
+    color: white;
+    font-size: 20px;
+}
+
+#fliename {
+    width: 422px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    height: 30px;
+}
+
+.pop button {
+    float: right;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 90px;
+}
+
+.pop span {
+    float: right;
+    color: white;
+    font-size: 30px;
+    margin-top: -50px;
+    cursor: pointer;
+
+}
+
+/* Upgrade For Software */
+#upgrade {
+    position: relative;
+    float: right;
+    margin-right: -120px;
+    margin-top: 190px;
+    padding: 8px;
+}
+
+.upgrade {
+    background-color: blue;
+
+    position: fixed;
+    background-color: rgb(42, 42, 255);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+    height: 35px;
+
+}
+
+.po {
+    width: 500px;
+    background-color: rgb(70, 70, 240);
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 1s, top 1s;
+}
+
+.po span {
+    float: right;
+    color: white;
+    font-size: 30px;
+    margin-top: -50px;
+    cursor: pointer;
+
+}
+
+.po input {
+    width: 420px;
+    margin: 8px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 6px;
+    height: 30px;
+}
+
+.po button {
+    float: right;
+    background-color: rgb(162, 139, 184);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 90px;
+}
+
+.po textarea {
+
+    width: 420px;
+    margin: 8px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 6px;
+
+}
+
+.po h2 {
+    color: white;
+}
+
+.po hr {
+    background-color: white;
+    height: 5px;
+}
+
+.open-po {
+    visibility: visible;
+    top: -50%;
+    transform: translate(-150%, -90%) scale(1);
+    position: absolute;
+}
+
+footer {
+    background-color: #efefef;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+
+@media (max-width:600px) {
+    marquee {
+        background-color: red;
+        color: white;
+        font-size: 20px;
+    }
+
+    .learn {
+        text-align: center;
+        margin: 0;
+    }
+
+    #learn {
+        margin: 27px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    #learnbusy {
+        float: right;
+        width: 254px;
+        margin-right: 73px;
+        margin-top: -10px;
+        height: 181px;
+    }
+
+
+    /* Contact us For Job */
+    #contactus {
+        background-color: #7171e3;
+        color: white;
+        border: none;
+        width: 167px;
+        margin-top: 20px;
+        margin-left: 1px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+    .popup {
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+
+    }
+
+    .popup h3 {
+        color: blue;
+    }
+
+    .popup h4 {
+        text-align: center;
+        color: #7171e3;
+    }
+
+    .open-popup {
+        visibility: visible;
+        top: 63%;
+        transform: translate(-50%, -50%) scale(1);
+        position: absolute;
+    }
+
+    .popup button {
+        float: right;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 90px;
+    }
+
+    /* Send Resume */
+    #cont {
+        background-color: #7171e3;
+        color: white;
+        border: none;
+        width: 190px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 28px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .pop {
+        width: 300px;
+        background-color: rgb(70, 70, 240);
+        border-radius: 10px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 1s, top 1s;
+    }
+
+    .open-pop {
+        visibility: visible;
+        top: 48%;
+        transform: translate(-50%, -50%) scale(1);
+        position: absolute;
+    }
+
+    .pop h2 {
+        color: white;
+    }
+
+    .pop hr {
+        color: white;
+    }
+
+    #popname {
+        width: 222px;
+        border: none;
+        border-radius: 6px;
+        padding-left: 30px;
+        margin: 10px;
+        height: 35px;
+    }
+
+    #nam {
+        border: none;
+        width: 222px;
+        border-radius: 6px;
+        padding-left: 15px;
+        margin: 10px;
+        height: 35px;
+    }
+
+    #lab {
+        margin: 13px;
+        color: white;
+        font-size: 20px;
+    }
+
+    #fliename {
+        width: 222px;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 6px;
+        margin: 10px;
+        height: 30px;
+    }
+
+    .pop button {
+        float: right;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 90px;
+    }
+
+    .pop span {
+        float: right;
+        color: white;
+        font-size: 30px;
+        margin-top: -50px;
+        cursor: pointer;
+
+    }
+
+    /* Upgrade For Software */
+    #upgrade {
+        position: relative;
+        float: right;
+        margin-right: -120px;
+        margin-top: 190px;
+        padding: 8px;
+    }
+
+    .upgrade {
+        background-color: blue;
+        position: fixed;
+        background-color: rgb(42, 42, 255);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 200px;
+        height: 35px;
+
+    }
+
+    .po {
+        width: 500px;
+        background-color: rgb(70, 70, 240);
+        border-radius: 10px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 1s, top 1s;
+    }
+
+    .po span {
+        float: right;
+        color: white;
+        font-size: 30px;
+        margin-top: -50px;
+        cursor: pointer;
+
+    }
+
+    .po input {
+        width: 420px;
+        margin: 8px;
+        border: none;
+        padding-left: 20px;
+        border-radius: 6px;
+        height: 30px;
+    }
+
+    .po button {
+        float: right;
+        background-color: rgb(162, 139, 184);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 90px;
+    }
+
+    .po textarea {
+
+        width: 420px;
+        margin: 8px;
+        border: none;
+        padding-left: 20px;
+        border-radius: 6px;
+
+    }
+
+    .po h2 {
+        color: white;
+    }
+
+    .po hr {
+        background-color: white;
+        height: 5px;
+    }
+
+    .open-po {
+        visibility: visible;
+        top: -50%;
+        transform: translate(-150%, -90%) scale(1);
+        position: absolute;
+    }
+
+    #footer p {
+        width: 534px;
+        font-size: 21px;
+        margin-left: -34px;
+        margin-top: -91px;
+    }
+
+    #busylogo {
+        margin-top: 20px;
+        margin-right: 26px;
+    }
+    footer{
+        padding-top: 137px;
+        margin-top: 20px;
+    }
+    #footer p {
+        width: 365px;
+        font-size: 21px;
+        margin-left: -34px;
+        margin-top: -12px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
+}

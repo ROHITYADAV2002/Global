@@ -1,0 +1,323 @@
+.cloud {
+    background-color: #dfe6f2;
+    height: 60px;
+    padding-left: 100px;
+    font-size: 43px;
+}
+
+#cloud {
+    padding-left: 100px;
+    width: 1235px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.data {
+    margin-left: 25%;
+}
+
+/* upgrade */
+
+#upgrade {
+    position: relative;
+    float: right;
+    margin-right: 210px;
+    margin-top: 360px;
+    padding: 8px;
+}
+
+.open-po {
+    visibility: visible;
+    top: -10%;
+    transform: translate(-150%, -90%) scale(1);
+    position: absolute;
+}
+
+/* Benefits of Busy cloud */
+.benefits h1 {
+    text-align: center;
+}
+
+.benefits img {
+    width: 1100px;
+    margin-left: 9%;
+}
+
+/*  */
+.pricing {
+    margin-left: 10%;
+}
+
+.pricing h6 {
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.pricing p {
+    width: 1129px;
+    font-size: 17px;
+
+}
+
+/* More info */
+.more {
+    border: none;
+    background-color: rgb(209, 173, 243);
+    border-radius: 6px;
+    color: white;
+    padding: 6px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 370px;
+    background-color: #4287f5;
+    border-radius: 10px;
+    position: absolute;
+    top: 190%;
+    left: 30%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.info h3 {
+    color: white;
+}
+
+.info span {
+    float: right;
+    color: white;
+    font-size: 30px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.open-info {
+    visibility: visible;
+    top: 210%;
+    transform: translate(-20%, -60%) scale(1);
+    position: absolute;
+}
+
+.info input {
+    border: none;
+    width: 300px;
+    margin: 5px;
+    border-radius: 6px;
+    padding-left: 20px;
+    height: 35px;
+}
+
+.info textarea {
+    border: none;
+    width: 300px;
+    margin: 5px;
+    border-radius: 6px;
+    padding-left: 20px;
+
+}
+
+.info button {
+    float: right;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 90px;
+}
+
+/* Call Us */
+.call {
+    border: none;
+    background-color: rgb(209, 173, 243);
+    border-radius: 6px;
+    color: white;
+    padding: 6px;
+    width: 70px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+.cal {
+    width: 370px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.cal p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cal h3 {
+    color: black;
+}
+
+.cal span {
+    float: right;
+    color: black;
+    font-size: 30px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.open-call {
+    visibility: visible;
+    top: 210%;
+    transform: translate(-20%, -60%) scale(1);
+    position: absolute;
+}
+
+.cal button {
+    float: right;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 90px;
+}
+
+@media (max-width:600px) {
+
+    /* cloud info */
+    .cloud {
+        height: 30px;
+        padding-left: 17px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    #cloud {
+        padding-left: 38px;
+        position: absolute;
+        width: 388px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 0%;
+    }
+
+    .data {
+        margin-left: 14%;
+        margin-top: 179px;
+        width: 300px;
+    }
+
+    /* Benefits of Busy cloud */
+
+    .benefits h1 {
+        text-align: center;
+        margin-top: -24px;
+    }
+
+    .benefits img {
+        width: 370px;
+        margin-left: 1%;
+    }
+
+    /*Prici  */
+    .pricing {
+        margin-left: 2px;
+    }
+
+    .pricing p {
+        width: 391px;
+        font-size: 14px;
+    }
+
+    /* More info */
+
+    .more {
+        margin-left: 30%;
+    }
+
+    .info {
+        width: 370px;
+        background-color: #4287f5;
+        border-radius: 10px;
+        position: absolute;
+        top: 190%;
+        left: 30%;
+        transform: translate(-50%, -50%) scale(0.1);
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+
+    }
+
+    .info h3 {
+        color: white;
+    }
+
+    .info span {
+        float: right;
+        color: white;
+        font-size: 30px;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+
+    .open-info {
+        visibility: visible;
+        top: 103%;
+        transform: translate(-29%, -60%) scale(1);
+        position: absolute;
+    }
+
+    .info input {
+        border: none;
+        width: 300px;
+        margin: 5px;
+        border-radius: 6px;
+        padding-left: 20px;
+        height: 35px;
+    }
+
+    .info textarea {
+        border: none;
+        width: 300px;
+        margin: 5px;
+        border-radius: 6px;
+        padding-left: 20px;
+
+    }
+
+    .info button {
+        float: right;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 90px;
+    }
+    .open-call {
+        visibility: visible;
+        top: 112%;
+        transform: translate(-50%, -60%) scale(1);
+        position: absolute;
+    }
+    #upgrade{
+        display: none;
+    }
+    footer{
+        margin-top: 0px;
+        padding-top: 137px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
+
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>term</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/privacy.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        footer {
+            background-color: #efefef;
+            padding: 40px;
+            margin-top: 100px;
+            margin-left: -70px;
+        }
+
+        @media (max-width:600px) {
+            footer {
+                background-color: #efefef;
+                width: 63%;
+                padding-top: 154px;
+                margin-top: 10px;
+                margin-left: -10px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- NEED HELP SECTION -->
+    <div class="need">
+        <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
+        <div class="overlay"></div>
+        <div class="loginform">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
+                <h4>Request a Call</h4>
+                <span onclick="closeModle()">&times;</span>
+                <hr>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    <p id="userError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address"
+                        required>
+                    <p id="emailError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
+                    <p id="phoneError" class="error"></p>
+                    <hr>
+                </div>
+                <a href=""> <button type="submit" class="btn btn-primary">Sent Request</button> </a>
+            </form>
+        </div>
+        <div id="need">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:9320763716 /9120004004" id="no">9320763716 / 9120004004</a>
+        </div>
+    </div>
+
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
+        <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Mail Us For Support</span>
+            <a href="mailto:gbs.mumbai@gmail.com" id="mail">gbs.mumbai@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: cursive;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learnBusy.html">Learn Busy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
+                        <button onclick="show() " class="now">Enquire
+                            Now</button>
+                        <div class="over"></div>
+                        <div class="login">
+
+                            <h4>Contact</h4>
+                            <span onclick="closem()">&times;</span>
+                            <hr>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="company" id="Company"
+                                    placeholder=" Company Name" required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="address" placeholder="Address 1"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Address 1</label>
+                            </div>
+                            <div class="form-floating pb-2">
+                                <textarea class="form-control" name="remarks" placeholder="Address 2"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingInputInvalid">Remarks</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" id="name"
+                                    placeholder="Enter Your Name" required>
+                                <p id="userError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id"
+                                    required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="city" id="city" placeholder="City"
+                                    required>
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No."
+                                    required>
+                                <p id="phoneError" class="error"></p>
+                                <hr>
+                            </div>
+                            <a href=""> <button type="submit" class="btn btn-primary">Sumbit</button> </a>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Privacy image  -->
+    <div class="privacy">
+        <img src="image/privacy-policy.jpg" alt="" srcset="">
+        <h2>Term & Condition</h2>
+    </div>
+
+    <!--  Upgrad For Software -->
+    <div id="upgrade">
+        <button class="upgrade" onclick="openpo()">Upgrade for Software</button>
+
+        <div class="po" id="po">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST">
+                <h2>Upgrade Your Software</h2>
+                <span onclick="closepo()">&times;</span>
+                <hr>
+                <input type="text" name="busy" id="busysr" placeholder="Busy Sr">
+                <br>
+                <input type="text" name="company" id=" co.name" placeholder="Company Name">
+                <br>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="tel" name="phone" id="mobile" placeholder="Mobile No.">
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email Id">
+                <input type="text" name="city" id="city" placeholder="City">
+                <br>
+                <textarea name="Remarks" id="" cols="30" rows="2"></textarea>
+                <hr>
+                <button type="sumbit">Sumbit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- policy -->
+    <div class="service-software">
+        <p id="service-software">
+            The following agreement encapsulates the terms and conditions of use (“Agreement”) applicable to the use of
+            this website and services of GBS Software and Services (“The Company”). Read these terms carefully before
+            downloading, installing or using this software. By downloading or installing the software, you acknowledge
+            and agree, that you understand it, and that you agree to be bound by its terms.
+            Should you object to any term or condition of these Terms, any guidelines, or any subsequent modifications
+            thereto or become dissatisfied with GBS in any way, your only recourse is to immediately uninstall our
+            product. You are, however, encouraged to inform/complain to our customer care team who will do their best to
+            address your concern(s). These General Terms apply generally to the use of the service GBS (“GBS”) and
+            constitute a contract between you and the Company.
+        </p>
+        <h1>Definitions</h1>
+        <p id="service-software"><span>Company</span> – The Terms of Conditions are framed for GBS Software and Services
+            (GBS) which will hereinafter be referred to as “Company”, “We”, “Us.”:</p>
+        <p id="service-software">
+            <span>Client/User</span> – The User/Client will be the user of website/software subjected to this terms and
+            conditions and be referred to use “You”, “Your”, “Yours”, or as an “User.”
+        </p>
+
+        <p id="service-software">
+            <span> Services/Softwares </span>– It means the products and services made available by Us via GBS, modules,
+            and feature(s) or Our cloud software and applications for businesses, including associated offline and
+            mobile applications (“Software”).
+        </p>
+        <h1>Acceptance of the Agreement</h1>
+        <p id="service-software">
+            You must be of legal age to enter into a binding agreement in order to accept the Agreement. If You do not
+            agree to the General Terms, do not use any of Our Services. If You agree to the General Terms and do not
+            agree to any service terms, do not use the Services/Software. By using GBS Products or interacting through
+            the Website You undertake and agree that You have fully read, understood and accepted the Agreement.
+        </p>
+        <h1>Description of Services</h1>
+        <p id="service-software">
+            We provide software and applications for businesses, including associated offline and mobile applications
+            under Our flagship LakshIT. You may use LakshIT Products for Your personal and business use or for internal
+            business purpose in the organization that You represent. You are responsible for obtaining access to the
+            internet and the equipment necessary to use our Products. You can create and edit content with Your user
+            account and if You choose to do so, You can publish and share such content.
+
+            Subject to the terms and conditions and acceptance as otherwise provided in this Agreement, LakshIT permits
+            to You a limited, non-exclusive, non-transferable and non-assignable license to evaluate LakshIT Promoted
+            Softwares for Your personal purposes only. You do not have any rights in or to the software except as
+            expressly granted in this Agreement. You acknowledge that the software, all copies of the Software, any
+            derivative works, compilations and collective work of the software, and any know-how and trade secrets
+            related to the software are the sole and exclusive property of the Company.
+
+            You alone are responsible for maintaining the confidentiality of Your username, password, and other
+            sensitive information. You are responsible for all activities that occur in Your user account, and You agree
+            to inform Us immediately of any unauthorized use of Your user account. We are not responsible for any loss
+            or damage to You or to any third party incurred as a result of any unauthorized access and/or use of Your
+            user account, or otherwise. We are not responsible for any kind of data discrepancy, or any type of loss
+            occurred due to data discrepancy/software issue.
+        </p>
+        <h1>Data Ownership</h1>
+        <p id="service-software">
+            The Brand being promoted by GBS is the sole owner and the lawful licensee of all the rights to the Software.
+            All title, ownership and intellectual property rights in the software and its products or services,
+            including the website content shall remain with Brand.
+
+            The copying, redistribution, or use by You of any part of Our Promoted softwares is strictly prohibited.
+            Your use of Our Services does not grant You ownership rights of any kind in Our Promoted Software. Original
+            Brand reserves all rights not expressly granted to You in this Agreement.
+
+            In no event shall GBS & Promoted Brand be liable for any direct, indirect, incidental, punitive, or
+            consequential damages of any kind whatsoever with respect to Your data. You hereby acknowledge that any
+            reliance upon the information shall be at Your sole risk and further understand and acknowledge that the
+            information has been legally complied.
+
+            We respect Your right to ownership of content created or stored by You. You own the content created or
+            stored by You. Unless specifically permitted by You, Your use of the Services does not grant us the license
+            to use, reproduce, adapt, modify, publish or distribute the content created by You or stored in Your user
+            account for marketing or any similar purpose. You grant GBS permission to access, copy, distribute, store,
+            transmit, reformat, publicly display and publicly perform the content of Your user account solely as
+            required for the purpose of providing the Services to You.
+        </p>
+        <h4>Trademark</h4>
+        <p id="service-software">
+            Any icons and logos related with promoted Brands GBS are registered trademarks or trademarks or service
+            marks of respective brands in various jurisdictions and are protected under applicable trademark and other
+            proprietary and intellectual property rights laws. The unauthorized adoption copying, modification, use or
+            publication of these marks is strictly prohibited.
+        </p>
+        <h4>Copyright</h4>
+        <p id="service-software">
+            All Website/software Content including Website Information is copyrighted to the GBS & Respective
+            Promoted Brands. You shall not indulge in infringement of any Brand’s copyright and may not use the
+            information provided by GBS in an unauthorized manner or for unauthorized purposes.
+        </p>
+
+        <h4>Collection of Information</h4>
+        <p id="service-software">
+            As part of the service, GBS may track certain information about You based upon Your behavior on the
+            product. We use this information to do internal research on Our users’ demographics, interests, and
+            behaviour to better understand, protect and serve Our users and improve Our services. This information is
+            compiled and analysed on an aggregated basis. We may also collect Your Internet Protocol (IP) address and
+            the URL used by You to connect Your computer to the internet, etc. This information may include the URL that
+            You just came from (whether this URL is on Our Website or not), which URL You next go to (whether this URL
+            is on Our Website or not), Your device information and configurations, computer browser information as the
+            case maybe.
+            We may use cookies on Our Website and apps (as the case maybe) to identify You in order to make Our Website
+            more user friendly. Most browsers will permit You to decline cookies but if You choose to do this it might
+            affect service on some parts of Our Website. If You choose to make a purchase through the Platform, We
+            collect information about Your buying behaviour. We retain this information as necessary to resolve
+            disputes, provide customer support and troubleshoot problems as permitted by law.
+        </p>
+
+        <h4>Combination of Your Information</h4>
+        <p id="service-software">
+            To perform the above functions, we may match information collected from you through different means or at
+            different times, including both personal information and non-personal information, and use such information
+            along with data obtained from other sources (including third parties), such as demographic information and
+            updated contact information. Our third party service providers or we may also use your information to assess
+            the level of interest in, and use of the Sites, our emails, and our other campaigns both on an individual
+            basis and in the aggregate. We may also use and/or combine information we collect off-line or from third
+            party sources to check the accuracy of, enhance and supplement your user records, and to better customize
+            your experience with us.
+        </p>
+
+        <h1>Approval of Alerts, Messages and Promotional Campaign</h1>
+        <p id="service-software">
+            In addition to the use of GBS Promoted Products, You agree to be bound by the following terms and
+            conditions: <br>
+
+            A. To receive promotional, transactional, and commercial communications from GBS through calls, email,
+            SMS or push notifications, even if Your contact number is registered under the Do Not Call Registry. <br>
+
+            B. The Service may include certain communications from GBS, such as service announcements,
+            administrative messages, and newsletters. <br>
+
+            You understand that these communications shall be considered part of using the Services. As part of Our
+            policy to provide You total privacy, We also provide You the option of opting out from receiving newsletters
+            from Us. However, You will not be able to opt-out from receiving service announcements and administrative
+            messages.
+        </p>
+
+        <h1>Spamming and Illegal Activities</h1>
+        <p id="service-software">
+            You agree to be solely responsible for the contents of Your transmissions through the Services. You agree
+            not to use the Services for illegal purposes or for the transmission of material that is unlawful,
+            defamatory, insulting, harassing, libelous, invasive of another’s privacy (including bodily privacy),
+            abusive, threatening, harmful, vulgar, pornographic, pedophilic, harmful to children, obscene, racially or
+            ethnically objectionable, or is otherwise objectionable, offends religious sentiments, promotes racism,
+            contains viruses or malicious code, or that which infringes or may infringe intellectual property or other
+            rights of another. You agree not to use the Services for the transmission of “junk mail”, “spam”, “chain
+            letters”, “phishing” or unsolicited mass distribution of email. We reserve the right to terminate Your
+            access to the Services if there are reasonable grounds to believe that You have used the Services for any
+            illegal or unauthorized activity.
+        </p>
+
+        <h1>Organization, Accounts and Administrators</h1>
+        <p id="service-software">
+            When You sign up for an account for Your organization You may specify one or more administrators. The
+            administrators will have the right to configure the Services based on Your requirements and manage end users
+            in Your organization account. If Your organization account is created and configured on Your behalf by a
+            third party, it is likely that such third party has assumed administrator role for Your organization. Make
+            sure that You enter into a suitable agreement with such third party specifying such party’s roles and
+            restrictions as an administrator of Your organization account.
+
+            You are responsible for (i) ensuring confidentiality of Your organization account password, (ii) appointing
+            competent individuals as administrators for managing Your organization account, and (iii) ensuring that all
+            activities that occur in connection with Your organization account comply with this Agreement. You
+            understand that GBS is not responsible for account administration and internal management of the
+            Services for You.
+
+            You are responsible for taking necessary steps for ensuring that Your organization does not lose control of
+            the administrator accounts. You may specify a process to be followed for recovering control in the event of
+            such loss of control of the administrator accounts. In the absence of any specified administrator account
+            recovery process, GBS may provide control of an administrator account to an individual providing proof
+            satisfactory to GBS demonstrating authorization to act on behalf of the organization. You agree not to
+            hold GBS liable for the consequences of any action taken by GBS in good faith in this regard.
+        </p>
+
+        <h1>General Limitations</h1>
+        <p id="service-software">
+            Except as otherwise expressly provided under this License Agreement, You shall have no right, and You
+            specifically agree not to: <br>
+
+            A. Utilize the Software beyond the applicable terms; <br>
+
+            B. Transfer, assign or sublicense Your license rights to any other person, and any such attempted transfer,
+            assignment or sublicense shall be void;<br>
+
+            C. Provide, divulge, disclose, or make available to, or permit the use of the Software by any third party;
+            <br>
+
+            D. Sell, resell, license, sublicense, distribute, rent or lease the Software or include the Software in a
+            service bureau or outsourcing offering; <br>
+
+            E. Make error corrections to or otherwise modify or adapt the Software or create derivative works based upon
+            the Software, or to permit third parties to do the same;
+
+            F. Decompile, decrypt, reverse engineer, disassemble or otherwise reduce the Software to human-readable
+            form, or to permit third parties to do the same;
+        </p>
+
+        <h1>Indemnification</h1>
+        <p id="service-software">
+            You agree to indemnify and hold harmless GBS, its officers, Proprietor, employees, suppliers, and
+            affiliates, from and against any losses, damages, fines and expenses (including attorney’s fees and costs)
+            arising out of or relating to any claims that You have used GBS Promoted Products in violation of
+            another party’s rights, in violation of any law, in violations of any provisions of the Agreement, or any
+            other claim related to Your use of the Services, except where such use is authorized by GBS.
+        </p>
+
+        <h1>Limitation of Liability</h1>
+        <p id="service-software">
+            YOU AGREE THAT LAKSHIT SHALL, IN NO EVENT, BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL,
+            PUNITIVE, OR OTHER LOSS OR DAMAGE WHATSOEVER OR FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION,
+            COMPUTER FAILURE, LOSS OF BUSINESS INFORMATION, OR OTHER LOSS ARISING OUT OF OR CAUSED BY YOUR USE OF OR
+            INABILITY TO USE THE SERVICE, EVEN IF BUSY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        </p>
+
+        <h1>Disclaimer of Warranties</h1>
+        <p id="service-software">
+            YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE USE OF LAKSHIT PROMOTED PRODUCTS IS AT YOUR SOLE RISK. THE
+            SOFTWARE AND ITS SERVICES ARE PROVIDED ON AN AS-IS-AND-AS-AVAILABLE BASIS. RESPECTIVE BRANDS EXPRESSLY
+            DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. LAKHSIT MAKES NO WARRANTY THAT THE
+            SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR FREE. USE OF ANY MATERIAL DOWNLOADED OR OBTAINED
+            THROUGH THE USE OF LAKSHIT PROMOTED PRODUCTS SHALL BE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY
+            RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM, MOBILE TELEPHONE, WIRELESS DEVICE OR DATA THAT RESULTS
+            FROM THE USE OF SOFTWARES OR THE DOWNLOAD OF ANY SUCH MATERIAL. NO ADVICE OR INFORMATION, WHETHER WRITTEN OR
+            ORAL, OBTAINED BY YOU FROM US, ITS EMPLOYEES OR REPRESENTATIVES SHALL CREATE ANY WARRANTY NOT EXPRESSLY
+            STATED IN THE AGREEMENT.
+        </p>
+
+        <h1>Security Policy</h1>
+        <p id="service-software">
+            You agree not to access or use the Services in any manner that could damage, disable, overburden, or impair
+            any GBS accounts, computer systems or networks. You agree not to attempt to gain unauthorized access to
+            any parts of the Site or any GBS accounts, computer systems or networks. You agree not to interfere or
+            attempt to interfere with the proper working of the Site or any GBS accounts, computer systems or
+            networks. You agree not to use any robot, spider, scraper or other automated means to access the Site or any
+            GBS accounts, computer systems or networks without BUSY’s express written permissi
+        </p>
+
+        <h1>Inactive User Account Policy</h1>
+        <p id="service-software">
+            Promoted Brands reserve the right to terminate unpaid user accounts that are inactive for a continuous
+            period. In the event of such termination, all data associated with such user account will be deleted. Brand
+            will provide You prior notice of such termination and option to back-up Your data. The data deletion policy
+            may be implemented with respect to any or all of the Services. Each Service will be considered an
+            independent and separate service for the purpose of calculating the period of inactivity. In other words,
+            activity in one of the Services is not sufficient to keep Your user account in another Service active. In
+            case of accounts with more than one user, if at least one of the users is active, the account will not be
+            considered inactive.
+        </p>
+
+        <h1>Hosting Location</h1>
+        <p id="service-software">
+            The location of the cloud facility from which You are served depends on the mapping of Your region/country
+            to the available cloud facilities at the time of Your sign-up. We may migrate Your account or require You to
+            migrate Your account to a different cloud facility in the event of any updates to the region/country to
+            cloud facility mapping at any point of time. You must not mask Your internet protocol (IP) address at the
+            time of sign-up since Your region/country is determined based on Your IP address. If, at any time, Your
+            actual region/country is found to be different from the region/country in Our records, GBS may take
+            appropriate action such as migrate Your account or require You to migrate Your account to the cloud facility
+            corresponding to Your region/country, or close Your account and deny the Service to You..
+        </p>
+
+        <h1>User Generated Content</h1>
+        <p id="service-software">
+            You may transmit or publish content created by You using any of the Services or otherwise. However, You
+            shall be solely responsible for such content and the consequences of its transmission or publication. If You
+            are a publisher of news and current affairs content as defined under Information Technology (Intermediary
+            Guidelines and Digital Media Ethics Code) Rules 2021, You shall furnish details to the Ministry of
+            Information and Broadcasting as required by Rule 18. Any content made public will be publicly accessible
+            through the internet and may be crawled and indexed by search engines. You are responsible for ensuring that
+            You do not accidentally make any private content publicly available. Any content that You may receive from
+            other users of the Services, is provided to You AS IS for Your information and personal use only and You
+            agree not to use, copy, reproduce, distribute, transmit, broadcast, display, sell, license or otherwise
+            exploit such content for any purpose, without the express written consent of the person who owns the rights
+            to such content. In the course of using any of the Services, if You come across any content with copyright
+            notice(s) or any copy protection feature(s), You agree not to remove such copyright notice(s) or disable
+            such copy protection feature(s) as the case may be. By making any copyrighted/copyrightable content
+            available on any of the Services You affirm that You have the consent, authorization or permission, as the
+            case may be from every person who may claim any rights in such content to make such content available in
+            such manner. Further, by making any content available in the manner aforementioned, You expressly agree that
+            GBS will have the right to block access to or remove such content made available by You if GBS
+            receives complaints concerning any illegality or infringement of third party rights in such content. By
+            using any of the Services and transmitting or publishing any content using such Service, You expressly
+            consent to determination of questions of illegality or infringement of third party rights in such content by
+            the agent designated by GBS for this purpose.
+        </p>
+
+        <h1>Sample Files and Application</h1>
+        <p id="service-software">
+            GBS may provide sample files and applications for the purpose of demonstrating the possibility of using
+            software effectively for specific purposes. The information contained in any such sample files and
+            applications consists of random data. GBS makes no warranty, either express or implied, as to the
+            accuracy, usefulness, completeness or reliability of the information or the sample files and applications.
+        </p>
+
+        <h1>Refund and Cancellation</h1>
+
+        <p id="service-software">
+            A. There shall be no Refund in case of Termination by Us. <br>
+
+            B. In case of Termination by You, only Annual Subscriptions Customer/s are entitled to raise a request for
+            full refund of their subscription amount provided that they have raised a grievance of their dissatisfaction
+            from the services within 7 days from the activation of their services and after giving reasonable time to us
+            to resolve the grievance. Such refund is subject to our sole discretion. In case of such termination, we may
+            downgrade your account to the free plan for that service with limited access.
+        </p>
+
+        <h1>Governing Law and Jurisdiction</h1>
+        <p id="service-software">
+            Any controversy or claim arising out of or relating to the Terms shall be settled and adjudicated
+            exclusively by the courts of Mumbai, India in accordance with the laws of India without regard to conflict
+            of law principles.
+        </p>
+
+        <h1>Pricing</h1>
+        <p id="service-software">
+            The features are available with an active License Subscription only. If not renewed, the subscription will
+            be cancelled.
+        </p>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div id="footer">
+                    <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
+                    <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai,
+                        deals
+                        in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.
+                    </p>
+                </div>
+                <div class="useful">
+                    <h2>Useful Link</h2>
+                    <ul id="useful">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="datahosting.html">Data Hosting</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                        <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
+                    </ul>
+                </div>
+                <div class="quick">
+                    <h2>Quick Link</h2>
+                    <ul id="useful">
+                        <li><a href="/term.html">Terms & Condition</a></li>
+                        <li><a href="Privacy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <div id="contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="register">Registered Office :</span>
+                    <p class="register">A-204, Sunnidhi Park, Nr.PMC Bank, New Link Road, Vasai(East), Thane-401209.</p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span id="mo">9320763716</span>
+
+                </div>
+
+                <div id="contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="register">Sales Office:</span>
+                    <p class="register">D-212, Shanti Shopping Center, Nr.Railway Station, Mira Road(East),
+                        Mumbai-401107
+                    </p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span id="mo">9270052306/9120004004</span>
+
+                </div>
+            </div>
+
+            <img src="image/busy-logo.jpg" alt="" srcset="" id="busylogo">
+
+            <div class="footer-font">
+                <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <hr>
+            <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit
+                Yadav
+            </p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>
